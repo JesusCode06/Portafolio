@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carlos — Portafolio Terminal</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesus | Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="terminal">
-    <div class="header">Carlos@portfolio:~$</div>
-    <div class="content">
-      <p><span class="command">> whoami</span><br>
-      Soy Carlos, Ingeniero de Sistemas con experiencia en desarrollo web y automatización.</p>
-
-      <p><span class="command">> ls habilidades</span><br>
-      🧠 HTML • CSS • JavaScript • Laravel • Node.js • MySQL • Git</p>
-
-      <p><span class="command">> ls proyectos</span><br>
-      <a href="#">📁 Sistema de Inventario - Laravel</a><br>
-      <a href="#">📁 API REST - Node.js</a><br>
-      <a href="#">📁 Dashboard React + MongoDB</a></p>
-
-      <p><span class="command">> contacto</span><br>
-      📧 carlos@email.com<br>
-      💼 <a href="https://linkedin.com/in/carlos" target="_blank">LinkedIn</a><br>
-      🖥️ <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+  <header>
+    <div class="container">
+      <h1>Jesus</h1>
+      <p>Ingeniero de Sistemas | Desarrollador Web</p>
     </div>
-  </div>
-  <script src="script.js"></script>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <p>Apasionado por la tecnología, el código limpio y el desarrollo de soluciones que mejoran la vida de las personas. Experiencia en desarrollo web y automatización de procesos.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Sistema de Inventario</h3>
+          <p>Laravel + MySQL</p>
+          <a href="#" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="project">
+          <h3>API REST</h3>
+          <p>Node.js + Express</p>
+          <a href="#" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Dashboard React</h3>
+          <p>React + MongoDB</p>
+          <a href="#" target="_blank">Ver en GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>📧 carlos@email.com</p>
+      <p>🔗 <a href="https://linkedin.com/in/carlos" target="_blank">LinkedIn</a> | <a href="https://github.com/tuusuario" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Carlos. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>

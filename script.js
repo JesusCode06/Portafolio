@@ -1,15 +1,19 @@
+// Animación al hacer scroll: fade in
 document.addEventListener("DOMContentLoaded", () => {
-  const lines = document.querySelectorAll(".content p");
-  let i = 0;
+  const elements = document.querySelectorAll("section, footer");
 
-  function showLine() {
-    if (i < lines.length) {
-      lines[i].style.display = "block";
-      i++;
-      setTimeout(showLine, 400);
-    }
-  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
 
-  lines.forEach(p => p.style.display = "none");
-  showLine();
+  elements.forEach(el => {
+    el.classList.add("hidden");
+    observer.observe(el);
+  });
 });
